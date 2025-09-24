@@ -17,28 +17,28 @@ function checkInputs() {
     const passwordConfirmationValue = passwordConfirmation.value;
 
     if (usernameValue === '') {
-    setErrorFor(username, 'O nome de usuário é obrigatório');        
+        setErrorFor(username, 'O nome de usuário é obrigatório');
     } else {
         setSuccessFor(username);
     }
 
     if (emailValue === '') {
-        setErrorFor(email, 'O email é obrigatório');        
-        } else {
-            setSuccessFor(email);
-        }
+        setErrorFor(email, 'O email é obrigatório');
+    } else {
+        setSuccessFor(email);
+    }
 
     if (passwordValue === '') {
-            setErrorFor(password, 'A senha é obrigatório');        
-        } else {
-                setSuccessFor(password);
-        }
-    
+        setErrorFor(password, 'A senha é obrigatório');
+    } else {
+        setSuccessFor(password);
+    }
+
     if (passwordConfirmationValue === '') {
-            setErrorFor(passwordConfirmation, 'A confirmaçãosenha é obrigatório');        
-        } else {
-                setSuccessFor(passwordConfirmation);
-        }
+        setErrorFor(passwordConfirmation, 'A confirmaçãosenha é obrigatório');
+    } else {
+        setSuccessFor(passwordConfirmation);
+    }
 }
 
 
@@ -61,6 +61,6 @@ function setSuccessFor(input) {
 
 function checkEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-      email
+        email
     );
-  }  
+}  
