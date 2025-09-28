@@ -120,6 +120,8 @@ select {
   padding: 10px;
   border-color: rgb(223, 219, 219);
   color: gray;
+}
 
-  
+.hide{
+  display: none;
 }

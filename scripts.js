@@ -5,6 +5,7 @@ const password= document.getElementById('password');
 const passawoedConfimation= document.getElementById('password-confirmation');
 const cpf= document.getElementById('cpf');
 const cnpj= document.getElementById('cnpj');
+const pessoaselect= document.getElementById('pessoaselect')
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -55,6 +56,16 @@ form.addEventListener('submit', (e) => {
    } else {
      setSuccessFor(cnpj);
    }
+ }
+
+ function hide{
+  const pessoaselect= pessoaselect.value;
+
+  if (pessoaselect === cpf){
+    cpf.classList.remove('hide');
+  } else if (pessoaselect === cnpj){
+    cnpj.classList.remove('hide');
+  }
  }
 
  function setErrorFor(input, message){
