@@ -58,7 +58,7 @@ form.addEventListener('submit', (e) => {
    }
  }
 
- function hide{
+ function hide(){
   const pessoaselect= pessoaselect.value;
 
   if (pessoaselect === cpf){
